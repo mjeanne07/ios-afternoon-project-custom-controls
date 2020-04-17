@@ -13,6 +13,7 @@
 		026E960F24493674007C0216 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026E960D24493674007C0216 /* Main.storyboard */; };
 		026E961124493677007C0216 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 026E961024493677007C0216 /* Assets.xcassets */; };
 		026E961424493677007C0216 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 026E961224493677007C0216 /* LaunchScreen.storyboard */; };
+		026E961C24493874007C0216 /* CustomControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 026E961B24493874007C0216 /* CustomControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		026E961024493677007C0216 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		026E961324493677007C0216 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		026E961524493677007C0216 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		026E961B24493874007C0216 /* CustomControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				026E960924493674007C0216 /* SceneDelegate.swift */,
 				026E960B24493674007C0216 /* ViewController.swift */,
 				026E960D24493674007C0216 /* Main.storyboard */,
+				026E961B24493874007C0216 /* CustomControl.swift */,
 				026E961024493677007C0216 /* Assets.xcassets */,
 				026E961224493677007C0216 /* LaunchScreen.storyboard */,
 				026E961524493677007C0216 /* Info.plist */,
@@ -140,6 +143,7 @@
 			files = (
 				026E960C24493674007C0216 /* ViewController.swift in Sources */,
 				026E960824493674007C0216 /* AppDelegate.swift in Sources */,
+				026E961C24493874007C0216 /* CustomControl.swift in Sources */,
 				026E960A24493674007C0216 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
