@@ -17,6 +17,7 @@ class CustomControl: UIControl {
     private let ComponentCount = 5
     private let componentActiveColor = UIColor.black
     private let componentInactiveColor = UIColor.gray
+    private ratingLabels = []
     
     required init?(coder aCoder: NSCoder) {
         super.init(coder: aCoder)
@@ -25,8 +26,10 @@ class CustomControl: UIControl {
     
     func setup() {
         
-        for x in 1...5 {
-         
+        for _ in 0..<5 {
+           let star = UILabel()
+            addSubview(star)
+            ratingLabels.append(star)
         }
         
     }
