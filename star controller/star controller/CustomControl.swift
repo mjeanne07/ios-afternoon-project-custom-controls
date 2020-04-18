@@ -17,18 +17,32 @@ class CustomControl: UIControl {
     private let ComponentCount = 5
     private let componentActiveColor = UIColor.black
     private let componentInactiveColor = UIColor.gray
-    private ratingLabels = []
+    private var ratingLabels: [UILabel] = []
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        setup()
+    }
     
     required init?(coder aCoder: NSCoder) {
         super.init(coder: aCoder)
         setup()
     }
     
+    override var intrinsicContentSize: CGSize {
+      let componentsWidth = CGFloat(componentCount) * componentDimension
+      let componentsSpacing = CGFloat(componentCount + 1) * 8.0
+      let width = componentsWidth + componentsSpacing
+      return CGSize(width: width, height: componentDimension)
+    }
+    
     func setup() {
-        
+       
         for _ in 0..<5 {
            let star = UILabel()
+            star.translatesAutoresizingMaskIntoConstraints = false
             addSubview(star)
+            star.tag += 1
             ratingLabels.append(star)
         }
         
