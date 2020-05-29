@@ -11,7 +11,16 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBAction func updateRating(_ ratingControl: CustomControl) {
-        self.title = "User Rating: N Stars"
+        switch ratingControl.value {
+        case 1:
+            self.title = "User Rating: \(ratingControl.value) star"
+        default:
+            self.title = "User Rating: \(ratingControl.value) stars"
     }
+}
+    override func viewDidLoad() {
+       super.viewDidLoad()
+     }
+
 }
 
